@@ -12,7 +12,7 @@ The Something is exactly what I want to do. So Dgls come out！
 
 1. The most conveniet way (recommended!)
 ```bash
-    $('div',  
+    _('div',  
         'child1',  
         $('div',  
             'child2'),  
