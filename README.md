@@ -12,31 +12,18 @@ The Something is exactly what I want to do. So Dgls come out！
 How to use it?
 --------------------------------------------------
 
-1. The most conveniet way (recommended!)
-
-    _('div',  
-        'child1',  
-        $('div',  
-            'child2'),  
-        $('div',  
-            'child3',  
-            $('div',  
-                'child3.1'),  
-            $('div',  
-                'child3.2')  
-        )  
-    ).string();  
+1. The most conveniet way
 
 ```bash
 _('div',  
     'child1',  
-    $('div',  
+    _('div',  
         'child2'),  
-    $('div',  
+    _('div',  
         'child3',  
-        $('div',  
+        _('div',  
             'child3.1'),  
-        $('div',  
+        _('div',  
             'child3.2')  
     )  
 ).string();  
