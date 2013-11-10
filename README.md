@@ -46,7 +46,20 @@ _('div', {'class': 'Dgls1', 'id': 'Dgls1'},
 ).string();
 ```
 
-###The most Flexible way with variable
+###The most flexible way on structure
+
+```bash
+_('div',
+    'child1').attr('id', 'Gdls6').push(
+    _('div', 'child2')).unshift(
+    _('div', 'child3')
+).concat(
+    _('div',
+        _('span', 'Glbsspan'))
+).string();
+```
+
+###The most flexible way on variable
 
 ```bash
 var clsName = 'Gdls2';
