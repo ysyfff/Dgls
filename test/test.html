@@ -8,7 +8,7 @@
         throw 'the function of ' + 'name ' + ' has existed!';;
     }    */
     ///////////////////////////////////////////////////////////
-(function(window){
+(function(Global){
     function Dgls(tagName, tagAttr, single){
         this._name = tagName;
         this._attr = tagAttr;
@@ -20,13 +20,14 @@
     Dgls.extend = function(obj){
         var proto = this.prototype;
         for(name in obj){
-            if((typeof proto[name] != 'function' || name == 'toString') && (typeof obj[name]=='function')){
+            if((typeof proto[name] != 'function') && (typeof obj[name] == 'function')){
                 proto[name] = obj[name];
             }else{
                 throw 'The method of ' + name + ' has exsited!';
             }
         }
     };
+
 
     Dgls.extend({
         attr: function(key, value){
@@ -135,7 +136,7 @@
         return obj;
     };
 
-    window._ = window.Dgls = dgls;
+    Global._ = Global.Dgls = dgls;
 })(window);
 console.log(_('div', _('div', 'houhou')).attr({'class': 'nimei', 'id': 'zhe'}).string());
 

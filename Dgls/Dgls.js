@@ -7,6 +7,17 @@
         this._children = [];
     }
 
+    Dgls.extend = function(obj){
+        var proto = this.prototype;
+        for(name in obj){
+            if((typeof proto[name] != 'function') && (typeof obj[name] == 'function')){
+                proto[name] = obj[name];
+            }else{
+                throw 'The method of ' + name + ' has exsited!';
+            }
+        }
+    };
+
     Dgls.prototype = {
         constructor: Dgls,
         attr: function(key, value){
