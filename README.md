@@ -11,7 +11,7 @@ The Something is exactly what I want to do. So Dgls come out！
 ##How to use it?
 
 1. The most conveniet way (recommended!)
-<code>
+    zhe..
 _('div',  
     'Dgls_child1',  
     _('div',  
