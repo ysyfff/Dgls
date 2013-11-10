@@ -12,7 +12,7 @@ The Something is exactly what I want to do. So Dgls come out！
 How to use it?
 --------------------------------------------------
 
-**The most conveniet way without attributes**
+###The most conveniet way without attributes
 
 ```bash
 _('div',
@@ -29,7 +29,7 @@ _('div',
 ).string();
 ```
 
-**The most convenient way with attributes**
+###The most convenient way with attributes
 
 ```bash
 _('div', {'class': 'Dgls1', 'id': 'Dgls1'},
@@ -46,7 +46,7 @@ _('div', {'class': 'Dgls1', 'id': 'Dgls1'},
 ).string();
 ```
 
-**The most Flexible way with variable**
+###The most Flexible way with variable
 
 ```bash
 var clsName = 'Gdls2';
