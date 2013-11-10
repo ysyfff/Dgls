@@ -12,7 +12,7 @@ The Something is exactly what I want to do. So Dgls come out！
 How to use it?
 --------------------------------------------------
 
-1. The most conveniet way
+1. The most conveniet way without attributes
 
 ```bash
 _('div',
@@ -29,4 +29,19 @@ _('div',
 ).string();
 ```
 
-2. 
+2. The most convenient way with attributes
+
+```bash
+_('div', {'class': 'Dgls1', 'id': 'Dgls1'},
+    'child1',
+    _('div', {'class': 'Dgls2', 'id': 'Dgls2'},
+        'child2'),
+    _('div', {'class': 'Dgls3', 'id': 'Dgls3'},
+        'child3',
+        _('div', {'class': 'Dgls4', 'id': 'Dgls4'},
+            'child3.1'),
+        _('div', {'class': 'Dgls5', 'id': 'Dgls5', 'style': 'color:red;'},
+            'child3.2')
+    )
+).string();
+```
