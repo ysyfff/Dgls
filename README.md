@@ -11,7 +11,7 @@ The Something is exactly what I want to do. So Dgls come out！
 ##How to use it?
 
 1. The most conveniet way (recommended!)
-    zhe..
+```bash
     $('div',  
         'child1',  
         $('div',  
@@ -24,3 +24,4 @@ The Something is exactly what I want to do. So Dgls come out！
                 'child3.2')  
         )  
     ).string();  
+```
