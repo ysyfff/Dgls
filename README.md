@@ -64,7 +64,7 @@ _('div',
 ```bash
 var clsName = 'Gdls2';
 
-_('div', {'class': clsName,},
+_('div', {'class': clsName},
     'child1',
     _('div',
         'child2'),
