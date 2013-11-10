@@ -1,4 +1,4 @@
-(function(Global){
+(function(Global, undefined){
     function Dgls(tagName, tagAttr, single){
         this._name = tagName;
         this._attr = tagAttr;
