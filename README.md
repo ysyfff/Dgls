@@ -13,6 +13,7 @@ How to use it?
 --------------------------------------------------
 
 1. The most conveniet way without attributes
+2. The most convenient way with attributes
 
 ```bash
 _('div',
@@ -28,8 +29,6 @@ _('div',
     )
 ).string();
 ```
-
-2. The most convenient way with attributes
 
 ```bash
 _('div', {'class': 'Dgls1', 'id': 'Dgls1'},
