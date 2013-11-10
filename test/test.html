@@ -2,13 +2,14 @@
 <html>
 <head></head>
 <body>
+    <script src="../Dgls/Dgls.js"></script>
     <script>
     /*var a = 10;
     if(a == 10){
         throw 'the function of ' + 'name ' + ' has existed!';;
     }    */
     ///////////////////////////////////////////////////////////
-(function(Global){
+/*(function(Global){
     function Dgls(tagName, tagAttr, single){
         this._name = tagName;
         this._attr = tagAttr;
@@ -79,7 +80,7 @@
                         if(tag instanceof Dgls){
                             arr[arrlen++] = tag.string();
                         }else if(typeof tag == 'string'){
-                            arr[arrlen++] = tag.toString();
+                            arr[arrlen++] = tag;
                         }
                     }
                 });
@@ -92,7 +93,7 @@
                     if(tag instanceof Dgls){
                         arr[arrlen++] = tag.string();
                     }else if(typeof tag == 'string'){
-                        arr[arrlen++] = tag.toString();
+                        arr[arrlen++] = tag;
                     }
                 }
             });
@@ -106,7 +107,7 @@
                     if(tag instanceof Dgls){
                         arr[arrlen++] = tag.string();
                     }else if(typeof tag == 'string'){
-                        arr[arrlen++] = tag.toString();
+                        arr[arrlen++] = tag;
                     }
                 }
             });
@@ -139,6 +140,7 @@
     Global._ = dgls;
     Global.Dgls = Dgls;
 })(window);
+*/
 
 //Ajax + innerHtml + Dgls = 用户体验 + 高性能 + 高效率
 
@@ -198,7 +200,7 @@ Dgls.extend({
       alert('zhe');
     }
 });
-_('div', 'hi').shift();
+console.log(_('div', 'zhe').__proto__);
 
     </script>
 </body>

@@ -68,7 +68,7 @@
                         if(tag instanceof Dgls){
                             arr[arrlen++] = tag.string();
                         }else if(typeof tag == 'string'){
-                            arr[arrlen++] = tag.toString();
+                            arr[arrlen++] = tag;
                         }
                     }
                 });
@@ -81,7 +81,7 @@
                     if(tag instanceof Dgls){
                         arr[arrlen++] = tag.string();
                     }else if(typeof tag == 'string'){
-                        arr[arrlen++] = tag.toString();
+                        arr[arrlen++] = tag;
                     }
                 }
             });
@@ -95,7 +95,7 @@
                     if(tag instanceof Dgls){
                         arr[arrlen++] = tag.string();
                     }else if(typeof tag == 'string'){
-                        arr[arrlen++] = tag.toString();
+                        arr[arrlen++] = tag;
                     }
                 }
             });
@@ -127,5 +127,6 @@
         return obj;
     };
 
-    Global._ = Global.Dgls = dgls;
+    Global._ = dgls;
+    Global.Dgls = Dgls;
 })(window);
