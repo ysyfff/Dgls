@@ -13,7 +13,6 @@ How to use it?
 --------------------------------------------------
 
 ###The most conveniet way without attributes
-
 ```bash
 _('div',
     'child1',
@@ -30,7 +29,6 @@ _('div',
 ```
 
 ###The most convenient way with attributes
-
 ```bash
 _('div', {'class': 'Dgls1', 'id': 'Dgls1'},
     'child1',
@@ -47,7 +45,6 @@ _('div', {'class': 'Dgls1', 'id': 'Dgls1'},
 ```
 
 ###The most flexible way on structure
-
 ```bash
 _('div',
     'child1').attr('id', 'Gdls6').push(
@@ -60,7 +57,6 @@ _('div',
 ```
 
 ###The most flexible way on variable
-
 ```bash
 var clsName = 'Gdls2';
 
@@ -76,4 +72,16 @@ _('div', {'class': clsName},
             'child3.2')
     )
 ).string();
+```
+
+How to add your method?
+----------------------------------------------
+
+Just use Dgls.extend as follow
+```bash
+Dgls.extend({
+    'shift': function(){
+        alert('add successfully!');     
+    }
+});
 ```
