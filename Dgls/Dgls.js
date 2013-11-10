@@ -112,7 +112,7 @@
                 attrs = arguments[1];
                 i = 2;
             }
-            obj = new Dgls(tagName, attrs);
+            obj = new Dgls(tagName, attrs, false);
         }else{
             i = 2;
             if((arguments[2] instanceof Object) && !(arguments[2] instanceof Dgls)){

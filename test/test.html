@@ -138,15 +138,60 @@
 
     Global._ = Global.Dgls = dgls;
 })(window);
-console.log(_('div', _('div', 'houhou')).attr({'class': 'nimei', 'id': 'zhe'}).string());
 
-var zhe = _('div', {'class': 'tag', 'style': 'width: 100px;'}).attr(
-    'id', 'ysy').push(
-    _('div', 'houhou')).unshift(
-    _('div', 'haha')).concat(
-    _('div', _('span', 'heihei')));
-console.log(zhe.__proto__)
-console.log(zhe.string());
+//Ajax + innerHtml + Dgls = 用户体验 + 高性能 + 高效率
+
+//最方便的
+console.log(
+    _('div',
+        '1234',
+        _('div',
+            'zhe'),
+        _('div',
+            'na',
+            _('div',
+                'houhou'),
+            _('div',
+                'heheh')
+        )
+    ).string()
+);
+//as deep as you can and as complex as you can
+
+console.log(
+    _('div', {'class': 'hou', 'id': 'yi'},
+        '1234',
+        _('div', {'class': 'no1'},
+            'zhe'),
+        _('div', {'class': 'no2'},
+            'na',
+            _('div', {'class': 'no3'},
+                'houhou'),
+            _('div', {'class': 'no4'},
+                'heheh')
+        )
+    ).string()
+);
+
+
+//结构上的灵活
+console.log(
+    _('div',
+        'zhe').attr('id', 'ysy').push(
+        _('div', 'houhou')).unshift(
+        _('div', 'haha')
+    ).concat(
+    _('div',
+        _('span', 'heihei')
+    )).string()
+)
+
+
+//参数上的灵活
+var class1 = 'hheh';
+var zhe2 = _('div', {'class': class1}, 'houhou');
+
+console.log(zhe2.string());
     </script>
 </body>
 </html>
