@@ -13,7 +13,6 @@ How to use it?
 --------------------------------------------------
 
 1. The most conveniet way
-
 ```bash
 _('div',  
     'child1',  
