@@ -24,4 +24,3 @@ _('div',
             'Dgls_child3_child2')  
         )  
     ).string();  
-</code>
