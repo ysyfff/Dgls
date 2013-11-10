@@ -12,16 +12,16 @@ The Something is exactly what I want to do. So Dgls come out！
 
 1. The most conveniet way (recommended!)
 <code>
-_('div',
-    'Dgls_child1',
-    _('div',
-        'Dgls_child2'),
-    _('div',
-        'Dgls_child3',
-        _('div',
-            'Dgls_child3_child1'),
-        _('div',
-            'Dgls_child3_child2')
-        )
-    ).string();
+_('div',  
+    'Dgls_child1',  
+    _('div',  
+        'Dgls_child2'),  
+    _('div',  
+        'Dgls_child3',  
+        _('div',  
+            'Dgls_child3_child1'),  
+        _('div',  
+            'Dgls_child3_child2')  
+        )  
+    ).string();  
 </code>
