@@ -13,17 +13,20 @@ How to use it?
 --------------------------------------------------
 
 1. The most conveniet way
+
 ```bash
-_('div',  
-    'child1',  
-    _('div',  
-        'child2'),  
-    _('div',  
-        'child3',  
-        _('div',  
-            'child3.1'),  
-        _('div',  
-            'child3.2')  
-    )  
-).string();  
+_('div',
+    'child1',
+    _('div',
+        'child2'),
+    _('div',
+        'child3',
+        _('div',
+            'child3.1'),
+        _('div',
+            'child3.2')
+    )
+).string();
 ```
+
+2. 
