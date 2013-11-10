@@ -103,5 +103,29 @@
         }
     });
 
-    
+    var dgls = function(tagName){
+        var attrs = {},
+            obj,
+            i = 1;
+        if(arguments[1] != 's'){
+            if((arguments[1] instanceof Object) && !(arguments[1] instanceof Dgls)){
+                attrs = arguments[1];
+                i = 2;
+            }
+            obj = new Dgls(tagName, attrs);
+        }else{
+            i = 2;
+            if((arguments[2] instanceof Object) && !(arguments[2] instanceof Dgls)){
+                attrs = arguments[2];
+                i = 3;
+            }
+            obj = new Dgls(tagName, attrs, true);
+        }
+        for(var length = arguments.length; i<length; i++){
+            obj.push(arguments[i]);
+        }
+        return obj;
+    };
+
+    Global._ = Global.Dgls = dgls;
 })(window);
