@@ -10,15 +10,15 @@ The Something is exactly what I want to do. So Dgls come out！
 
 ##How to use it?
 1. The most conveniet way (recommended!)
-_('div',
-'Dgls_child1',
-_('div',
-'Dgls_child2'),
-_('div',
-'Dgls_child3',
-_('div',
-'Dgls_child3_child1'),
-_('div',
-'Dgls_child3_child2')
-)
-).string();
+  _('div',
+  'Dgls_child1',
+  _('div',
+  'Dgls_child2'),
+  _('div',
+  'Dgls_child3',
+  _('div',
+  'Dgls_child3_child1'),
+  _('div',
+  'Dgls_child3_child2')
+  )
+  ).string();
